@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: ReportIncident-Service
+  config:
+    import: optional:configserver:http://localhost:8888
+  profiles:
+    active: dev
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: refresh
+
+
+#server:
+#  port: 5056
+#
+#
+#  data:
+#    mongodb:
+#      uri: mongodb+srv://opiofitson:EtnFcUECuhXVL1qx@cluster0.mzoxcjq.mongodb.net/footfreedom?retryWrites=true&w=majority
+
+
+
